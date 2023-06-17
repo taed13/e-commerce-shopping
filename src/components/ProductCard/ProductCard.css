@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Signika+Negative:wght@500&display=swap");
 
+:root {
+  --primary-color: #4daf54;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -31,14 +35,34 @@ body {
   top: 15px;
 }
 
+.card__heart {
+  color: #ff2e63;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.card__heart:hover {
+  transform: scale(0.8);
+}
+
 .card__cart {
   left: unset;
   right: 20px;
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.card__cart:hover {
+  transform: scale(0.8);
 }
 
 .card__img {
-  width: 100%;
+  width: 85%;
   height: 50%;
+  transition: 0.5s;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card__img img {
@@ -52,4 +76,108 @@ body {
   font-size: 25px;
   font-weight: bold;
   text-align: center;
+  transition: 0.5s;
+}
+
+.card__title {
+  color: var(--primary-color);
+}
+
+.card__size,
+.card__color {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card__size span {
+  padding: 1px 10px;
+  background: #dadada;
+  color: black;
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.card__size span:hover {
+  transform: scale(0.9);
+}
+
+.card__color span {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.card__color span:hover {
+  transform: scale(0.9);
+}
+
+.card__color--green {
+  background: green;
+}
+
+.card__color--red {
+  background: red;
+}
+
+.card__color--black {
+  background: black;
+}
+
+.card__action button {
+  background: var(--primary-color);
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: 0.5s;
+}
+
+.card__action button:hover {
+  transform: scale(0.9);
+}
+
+.card:hover .card__img {
+  transform: translateY(-90px) rotate(-20deg);
+}
+
+.card:hover .card__title {
+  transform: translate(-38px, -72px);
+}
+
+.card:hover .card__price {
+  transform: translate(-117px, -72px);
+}
+
+.card__size {
+  margin-top: 150px;
+}
+
+.card__size,
+.card__color,
+.card__action {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.card:hover .card__size,
+.card:hover .card__color,
+.card:hover .card__action {
+  visibility: visible;
+  opacity: 100;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.card:hover .card__size {
+  margin-top: -30px;
 }

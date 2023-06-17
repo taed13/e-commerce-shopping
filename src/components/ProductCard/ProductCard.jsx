@@ -19,9 +19,23 @@ const ProductCard = () => {
         </div>
         <div className="card__title">Nike Zoom KD 12</div>
         <div className="card__price">$99</div>
-        <div className="card__size"></div>
-        <div className="card__color"></div>
-        <div className="card__action"></div>
+        <div className="card__size">
+          <h3>Size:</h3>
+          <span>6</span>
+          <span>7</span>
+          <span>8</span>
+          <span>9</span>
+        </div>
+        <div className="card__color">
+          <h3>Color:</h3>
+          <span className="card__color--green"></span>
+          <span className="card__color--red"></span>
+          <span className="card__color--black"></span>
+        </div>
+        <div className="card__action">
+          <button>Buy Now</button>
+          <button>Add Cart</button>
+        </div>
       </div>
     </>
   );
