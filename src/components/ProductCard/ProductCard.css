@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Signika+Negative:wght@500&display=swap");
 
 :root {
-  --primary-color: #4daf54;
+  --primary-product-color: #4daf54;
 }
 
 * {
@@ -48,7 +48,7 @@ body {
 .card__cart {
   left: unset;
   right: 20px;
-  color: var(--primary-color);
+  color: var(--primary-product-color);
   cursor: pointer;
   transition: 0.5s;
 }
@@ -80,7 +80,7 @@ body {
 }
 
 .card__title {
-  color: var(--primary-color);
+  color: var(--primary-product-color);
 }
 
 .card__size,
@@ -130,7 +130,7 @@ body {
 }
 
 .card__action button {
-  background: var(--primary-color);
+  background: var(--primary-product-color);
   border: none;
   outline: none;
   color: white;
