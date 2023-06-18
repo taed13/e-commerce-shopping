@@ -5,6 +5,7 @@ import ProductCard from './components/ProductCard/ProductCard';
 import ProfileCard from './components/ProfileCard/ProfileCard';
 import ModalPopup from './components/ModalPopup/ModalPopup';
 import ImageGallery from './components/ImageGallery/ImageGallery';
+import SearchBox from './components/SearchBox/SearchBox';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/profile-card" element={<ProfileCard />} />
           <Route path="/modal-popup" element={<ModalPopup />} />
           <Route path="/image-gallery" element={<ImageGallery />} />
+          <Route path="/search-box" element={<SearchBox />} />
         </Routes>
       </BrowserRouter>
     </div>
