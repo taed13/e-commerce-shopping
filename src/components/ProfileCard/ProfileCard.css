@@ -4,22 +4,6 @@
   --primary-profile-color: #f2726a;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  height: 100vh;
-  background: linear-gradient(45deg, #00853e, #50c878);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Poppins", sans-serif;
-  color: white;
-}
-
 .profile_card {
   width: 300px;
   height: 400px;
